@@ -12,7 +12,7 @@ from distutils.command.build_ext import build_ext
 class mybuild(build_ext):
     def run(self):
         if "nt" in os.name:
-            print "On Windows, skipping build_ext."
+            print("On Windows, skipping build_ext.")
             return
         build_ext.run(self)
 
