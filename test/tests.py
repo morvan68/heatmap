@@ -66,7 +66,7 @@ class TestColorScheme(unittest.TestCase):
         self.assertEqual(keys, ['fire', 'pgaitch', 'pbj', 'omg', 'classic'])
 
     def test_values(self):
-        for key, values in colorschemes.schemes.iteritems():
+        for key, values in colorschemes.schemes.items():
             self.assertTrue(isinstance(values, list))
             self.assertEqual(len(values), 256)
             for value in values:

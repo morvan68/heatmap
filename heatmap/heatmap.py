@@ -4,7 +4,7 @@ import ctypes
 import platform
 import math
 
-import colorschemes
+from . import colorschemes
 
 from PIL import Image
 
